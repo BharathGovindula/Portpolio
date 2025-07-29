@@ -335,7 +335,34 @@
   </section>
   <!-- --------------------------Tools --------------------------->
 
+    <!-- --------------------- git calendar ----------------------- -->
 
+    <section class="github">
+        <h2 class="title">Github Stats</h2>
+
+
+        <div class="calendar react-activity-calendar">
+            Loading the data just for you.
+        </div>
+
+        <div class="git-box">
+            <div>
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=BharathGovindula&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                    alt="streakstat" />
+            </div>
+            <div>
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=BharathGovindula&lans-count=3&show_icons=true&theme=radical"
+                    alt="top_languages" />
+            </div>
+            <div>
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=BharathGovindula&count_private=true&theme=radical"
+                    alt="stat-card" />
+            </div>
+        </div>
+    </section>
 
 
   <!-- contact section start -->
@@ -406,4 +433,9 @@
   }
 
 
+</script>
+
+<script>
+    new GitHubCalendar(".calendar", "BharathGovindula");
+    new GitHubCalendar(".calendar", "BharathGovindula", { responsive: true });
 </script>
